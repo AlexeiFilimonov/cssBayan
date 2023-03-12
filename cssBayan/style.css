@@ -2,3 +2,65 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #f5f5eb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: 70%;
+}
+
+.header {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.meme {
+    border-top: 1px solid #d9dfe4;
+}
+
+.meme__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1rem 0;
+    color: #0059d9;
+}
+
+.meme__icon {
+    display: none;
+    transition: .3s;
+}
+
+.meme__image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.meme__image {
+    transition: .3s;
+    height: 0;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label .meme__icon {
+    transform: rotateZ(45deg);
+}
+
+input:checked+label .meme__image {
+    height: 30rem;
+    margin-bottom: 1em;
+}
+
+input:checked+label .meme__header {
+    color: #000;
+}
