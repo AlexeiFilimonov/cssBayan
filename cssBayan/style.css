@@ -44,7 +44,7 @@ body {
 
 .meme__image {
     transition: .3s;
-    height: 0;
+    width: 0;
 }
 
 input {
@@ -56,7 +56,7 @@ input:checked+label .meme__icon {
 }
 
 input:checked+label .meme__image {
-    height: 30rem;
+    width: 30rem;
     margin-bottom: 1em;
 }
 
@@ -80,7 +80,7 @@ input:checked+label .meme__header {
     }
 
     .meme:hover .meme__image {
-        height: 30rem;
+        width: 30rem;
         margin-bottom: 1em;
     }
 
@@ -111,11 +111,11 @@ input:checked+label .meme__header {
     }
 
     input:checked+label .meme__image {
-        height: 25rem;
+        width: 25rem;
     }
 
     .meme:hover .meme__image {
-        height: 25rem;
+        width: 25rem;
     }
 }
 
