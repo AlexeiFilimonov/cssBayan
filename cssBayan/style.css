@@ -64,3 +64,28 @@ input:checked+label .meme__image {
 input:checked+label .meme__header {
     color: #000;
 }
+
+@media (hover: hover) {
+
+    .container:hover,
+    .container:hover * {
+        cursor: pointer;
+    }
+
+    .container:hover .meme__header {
+        color: #000;
+    }
+
+    .container:hover .meme__icon {
+        display: block;
+    }
+
+    .meme:hover .meme__image {
+        height: 30rem;
+        margin-bottom: 1em;
+    }
+
+    .meme:hover .meme__icon {
+        transform: rotateZ(45deg);
+    }
+}
