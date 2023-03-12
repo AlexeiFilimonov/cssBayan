@@ -118,3 +118,13 @@ input:checked+label .meme__header {
         height: 25rem;
     }
 }
+
+@media (max-width: 510px) {
+    html {
+        font-size: .5rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
