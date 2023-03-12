@@ -34,7 +34,6 @@ body {
 }
 
 .meme__icon {
-    display: none;
     transition: .3s;
 }
 
@@ -88,4 +87,16 @@ input:checked+label .meme__header {
     .meme:hover .meme__icon {
         transform: rotateZ(45deg);
     }
+
+    .meme__icon {
+        display: none;
+    }
+}
+
+.meme:active{
+    opacity: .8;
+}
+
+.meme:active .meme__header {
+    color: #0059d9;
 }
