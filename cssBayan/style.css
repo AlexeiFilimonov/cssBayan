@@ -100,3 +100,21 @@ input:checked+label .meme__header {
 .meme:active .meme__header {
     color: #0059d9;
 }
+
+@media (max-width: 820px) {
+    html {
+        font-size: .8rem;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    input:checked+label .meme__image {
+        height: 25rem;
+    }
+
+    .meme:hover .meme__image {
+        height: 25rem;
+    }
+}
